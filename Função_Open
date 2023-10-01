@@ -1,0 +1,23 @@
+- utilizamos a função `open()` para ler um arquivo
+- podemos especificar o modo de abertura (read / write)
+- podemos especificar o encoding
+- retorna um objeto do tipo `_io.TextIOWrapper`
+- se o arquivo não existir teremos uma exceção do tipo `FileNotFoundError`
+- é necessário fechar o arquivo quando não for mais utilizado, pois consome recurso
+- podemos utilizar o `with` para facilitar a nossa vida!
+
+Função open()
+
+arquivo = open('dados.txt')
+
+type(arquivo)
+_io.TextIOWrapper
+
+arquivo
+<_io.TextIOWrapper name='dados.txt' mode='r' encoding='cp1252'>
+
+arquivo.encoding
+'cp1252'
+
+arquivo.mode
+'r'
